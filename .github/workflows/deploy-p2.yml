@@ -2,11 +2,11 @@ name: Deploy to Azure Container Instances
 
 on:
   push:
-    branches: [main]
+    branches: [main, cicd-only]
     # paths:
       # - 'azure/project-2-cicd-pipeline/**'  
   pull_request:
-    branches: [main]
+    branches: [main, cicd-only]
     # paths:
       # - 'azure/project-2-cicd-pipeline/**'  
   workflow_dispatch:  # Manual triggering
