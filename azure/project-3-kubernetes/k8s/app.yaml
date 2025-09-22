@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: my-webapp
-        image: my-webapp:latest
-        imagePullPolicy: Never  # This tells K8s to use local images only
+        image: angeloti83/my-webapp:latest
+        imagePullPolicy: IfNotPresent  # This tells K8s to use local images only
         resources:
           limits:
             cpu: "500m"
