@@ -1,15 +1,15 @@
 name: Deploy to Azure Container Instances
 
 on:
-  push: #
-    branches: 
-    # paths:
-      # - 'azure/project-2-cicd-pipeline/**'  
+  push:
+    branches:
+      - main
+      - develop
   pull_request:
-    branches: #
-    # paths:
-      # - 'azure/project-2-cicd-pipeline/**'  
-  workflow_dispatch:  # Manual triggering
+    branches:
+      - main
+  workflow_dispatch:  # Allows manual triggering
+
 
 env:
   AZURE_RESOURCE_GROUP: #
